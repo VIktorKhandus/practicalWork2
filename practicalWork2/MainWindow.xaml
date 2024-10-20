@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:practicalWork2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="496" Width="849">
     <Grid>
-        
+        <Label Content="Просмотр погоды" HorizontalAlignment="Center" Margin="0,10,0,429" VerticalContentAlignment="Top" FontSize="20" Width="178"/>
+        <ScrollViewer Margin="10,70,10,70" VerticalScrollBarVisibility="Auto">
+            <WrapPanel x:Name="wrapPanelWeather" Height="Auto" Width="Auto"/>
+        </ScrollViewer>
+        <Label x:Name="LabelLoad" Content="Загрузка" HorizontalAlignment="Center" Margin="0,213,0,225" VerticalContentAlignment="Top" FontSize="20" Width="93"/>
+        <Button x:Name="buttonMinus" Content="Прошлые 25"  HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Height="45" Width="100" RenderTransformOrigin="0.419,0.299" Click="buttonMinus_Click"/>
+        <Button x:Name="buttonPlus" Content="Следующие 25"  HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="45" Width="100" RenderTransformOrigin="0.419,0.299" Click="buttonPlus_Click"/>
     </Grid>
 </Window>
